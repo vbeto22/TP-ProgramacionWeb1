@@ -6,6 +6,79 @@
     <title>Pago</title>
 </head>
 <body>
-    
+    <header>
+        <a href="mainLogueado.html"><img src="imagenes/UNLaM-Land.PNG"></a>
+        <h1>UNLaM-Land</h1>
+        <a href=#Atracciones>Atracciones</a>
+        <a href=#Entradas>Entradas y Pases</a>
+        <details style="display: inline-block; vertical-align: middle;">
+            <summary style="list-style: none; cursor: pointer;">
+                <img src="imagenes/cart.svg" alt="Carrito de compras">
+            </summary>
+            <div>
+                <img src="imagenes/ticket1.svg" alt="Ticket Semanal">
+                <p>Cantidad: 1</p>
+                <img src="imagenes/paseRapido.svg" alt="Pase Rápido">
+                <p>Cantidad: 1</p>
+                <p>Total: $3500</p>
+                <form action="pago.html">
+                    <button type="submit">Pagar</button>
+                </form>
+            </div>
+        </details>
+        <a href="usuario.html">Usuario</a>
+    </header>
+    <main>
+        <h2>Mi carrito</h2>
+
+        <h3>Productos</h3>
+        <img src="imagenes/ticket1.svg" alt="Ticket Semanal">
+        <p>Entrada de lunes a viernes: $1000</p>
+        <p>Cantidad: 1</p>
+        <img src="imagenes/paseRapido.svg" alt="Pase Rápido">
+        <p>Pase Rápido: $2500</p>
+        <p>Cantidad: 1</p>
+
+        <h3>Total a pagar: $3500</h3>
+        <form action="index.html" method="get">
+
+            <input type="radio" id="mercadoPago" name="metodoPago" value="mercadoPago" required>
+            <label for="mercadoPago">Mercado Pago</label><br>
+            <img src="imagenes/mercadoPago.svg">
+
+            <input type="radio" id="tarjetaCredito" name="metodoPago" value="tarjetaCredito">
+            <label for="tarjetaCredito">Tarjeta de crédito</label><br>
+            <img src="imagenes/americanExpressCredito.svg">
+            <img src="imagenes/visaCredito.svg">
+            <img src="imagenes/mastercardCredito.svg">
+            
+            <label for="tarjetaDebito">Tarjeta de débito</label><br>
+            <input type="radio" id="tarjetaDebito" name="metodoPago" value="tarjetaDebito">
+            <img src="imagenes/masterCardDebito.svg">
+            <img src="imagenes/visaDebito.svg">
+
+            <input type="radio" id="efectivo" name="metodoPago" value="efectivo">
+            <label for="efectivo">Efectivo</label><br>
+            <img src="imagenes/pagoFacil.svg">
+            <img src="imagenes/rapipago.svg"> 
+
+            <button type="submit">Pagar</button>
+        </form>
+    </main>
+    <footer>
+        <a href="mainLogueado.html"><img src="imagenes/UNLaM-Land.PNG"></a>
+        <h1>UNLaM-Land</h1>
+        <p>VAZQUEZ ESPINDOLA MARIO ALBERTO</p>
+        <p>CABRAL LUCIANO AGUSTIN</p>
+        <p>MUÑOZ CALELLO JUAN ESTEBAN</p>
+        <img src="imagenes/whatsapp.svg">
+        <img src="imagenes/tiktok.svg">
+        <img src="imagenes/facebook.svg">
+        <img src="imagenes/instagram.svg">
+        
+        <a href="contacto.html">Contacto</a>
+
+    </footer>     
+
 </body>
 </html>
