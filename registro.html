@@ -4,11 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link rel="stylesheet" href="styles/headerYFooter.css">
+    <link rel="stylesheet" href="styles/registro.css">
 </head>
 <body>
     <header>
-        <a href="mainDeslogueado.html"><img src="imagenes/UNLaM-Land.PNG"></a>
-        <h1>UNLaM-Land</h1>
+        <section class="logo">
+            <a  href="mainLogueado.html"><img src="imagenes/UNLaM-Land.PNG"></a>
+        </section>
+        <section class="navegacion">
+            <details class="carritoCompra">
+                <summary class="carrito" >
+                    <img class="ImgCarrito" src="imagenes/cart.svg" alt="Carrito de compras">
+                </summary>
+                <section class="resumenCompra">
+                    <article class="tituloCompra">
+                    <h2>Resumen de compra</h2>
+                    </article>
+                    <article class="items">
+                        <img src="imagenes/ticket1.svg" alt="Ticket Semanal">
+                        <p>Cantidad: 1</p>
+                    </article>
+                    <article class="items">
+                        <img src="imagenes/paseRapido.svg" alt="Pase Rápido">
+                        <p>Cantidad: 1</p>
+                    </article>
+
+
+                    <p>Total: $3500</p>
+                    <form action="pago.html">
+                        <button class="botonPago" type="submit">Pagar</button>
+                    </form>
+                </section>
+
+            </details>
+
+            <a class="usuario" href="usuario.html">Usuario</a>     
+        </section>   
     </header>
     <main>
         <h2>Crear cuenta en UNLaM-Land</h2>
@@ -34,18 +66,18 @@
         </form>
     </main>
     <footer>
-        <a href="mainDeslogueado.html"><img src="imagenes/UNLaM-Land.PNG"></a>
-        <h1>UNLaM-Land</h1>
-        <p>VAZQUEZ ESPINDOLA MARIO ALBERTO</p>
-        <p>CABRAL LUCIANO AGUSTIN</p>
-        <p>MUÑOZ CALELLO JUAN ESTEBAN</p>
-        <img src="imagenes/whatsapp.svg">
-        <img src="imagenes/tiktok.svg">
-        <img src="imagenes/facebook.svg">
-        <img src="imagenes/instagram.svg">
-        
-        <a href="contacto.html">Contacto</a>
-
-    </footer>
+        <section class="logo">
+            <a  href="mainLogueado.html"><img src="imagenes/UNLaM-Land.PNG"></a>
+        </section>
+        <section class="redesSociales">
+            <img class="logoRRSS" src="imagenes/whatsapp.svg">
+            <img class="logoRRSS" src="imagenes/tiktok.svg">
+            <img class="logoRRSS" src="imagenes/facebook.svg">
+            <img class="logoRRSS"src="imagenes/instagram.svg">
+        </section>
+        <section class="contacto">
+        <a class="contacto" href="contacto.html">Contacto</a>
+        </section>
+    </footer>  
 </body>
 </html>
