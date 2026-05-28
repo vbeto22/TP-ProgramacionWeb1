@@ -1,0 +1,117 @@
+body {
+    background-color: #f7f3de;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open sans", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    width: 100%;
+}
+
+#formularioUsuario {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    gap: 1rem;
+}
+
+.perfil {
+    grid-column-start: 1;
+    text-align: center;
+}
+
+.perfil img {
+    width: 6.25rem;
+    height: 6.25rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nombre-usuario {
+    text-align: center;
+}
+
+.datosPerfil {
+    grid-column-start: 2;
+}
+
+.datosPerfil h3 {
+    width: 100%;
+    max-width: 12.5rem;
+}
+
+.datosPerfil input {
+    width: 15rem;
+    height: 2rem;
+    display: inline-block;
+    border-radius: 0.5em;
+    border: none;
+    font-size: 1em;
+    padding-left: 1em;
+    background-color: #5a5760;
+    color: white;
+}
+
+.datosPerfil input::placeholder {
+    color: white;
+    opacity: 0.6;
+    font-size: .9em;
+}
+
+.mail {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+}
+
+.contraseña {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+}
+
+.nuevaContraseña {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    vertical-align: middle;
+}
+
+.repetirContraseña {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    vertical-align: middle;
+}
+
+.accionesFormulario {
+    grid-column: 2 / 4;
+    padding-top: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    width: 13em;
+    height: 3em;
+    font-weight: bold;
+    border-radius: 0.5em;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Media queries vacías limpias para uso futuro */
+@media (max-width: 768px) {
+}
+
+@media (max-width: 425px) {
+}
