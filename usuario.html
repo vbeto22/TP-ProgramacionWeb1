@@ -6,6 +6,66 @@
     <title>Usuario</title>
 </head>
 <body>
+    <header>
+        <img src="imagenes/UNLaM-Land.PNG">
+        <h1>UNLaM-Land</h1>
+        <details style="display: inline-block; vertical-align: middle;">
+            <summary style="list-style: none; cursor: pointer;">
+                <img src="imagenes/cart.svg" alt="Carrito de compras">
+            </summary>
+            <div>
+                <img src="imagenes/ticket1.svg" alt="Ticket Semanal">
+                <p>Cantidad: 1</p>
+                <img src="imagenes/paseRapido.svg" alt="Pase Rápido">
+                <p>Cantidad: 1</p>
+                <p>Total: $3500</p>
+                <form action="pago.html">
+                    <button type="submit">Pagar</button>
+                </form>
+            </div>
+        </details>
+        <a href="usuario.html">Usuario</a>        
+    </header>
+    <main>
+        <form id="formularioUsuario" action="index.html" method="get">
+            <section class="perfil">
+                <img src="imagenes/usuario.svg" alt="Imagen de perfil">
+                <h4 class="nombre-usuario" id="nombreUsuario">nombre de usuario</h4>
+            </section>
+            <section class="datosPerfil">
+                <h2>Datos de la cuenta</h2>
+                <h3 class="mail">Mail</h3>
+                <p class="mail" id="email">mario@gmail.com</p>
+                <br>
+                <h3 class="contraseña">Contraseña</h3>
+                <p class="contraseña">************</p>
+                <br>
+                <h3 class="nuevaContraseña">Nueva contraseña</h3>
+                <input class="nuevaContraseña" type="password" name="nuevaContraseña" id="nuevaContraseña" placeholder="Ingrese su nueva contraseña">
+                <h3 class="repetirContraseña">Repetir contraseña</h3>
+                <input class="repetirContraseña" type="password" name="repiteContraseña" id="repiteContraseña" placeholder="Ingrese su nueva contraseña">
+            </section>
+            <section class="accionesFormulario">
+                <article class="guardar">
+                    <input class="boton" type="submit" value="Guardar cambios">
+                </article>
+            </section>
+        </form>
+    </main>   
+    <footer>
+        <img src="imagenes/UNLaM-Land.PNG">
+        <h1>UNLaM-Land</h1>
+        <p>VAZQUEZ ESPINDOLA MARIO ALBERTO</p>
+        <p>CABRAL LUCIANO AGUSTIN</p>
+        <p>MUÑOZ CALELLO JUAN ESTEBAN</p>
+        <img src="imagenes/whatsapp.svg">
+        <img src="imagenes/tiktok.svg">
+        <img src="imagenes/facebook.svg">
+        <img src="imagenes/instagram.svg">
+        
+        <a href="contacto.html">Contacto</a>
+
+    </footer>       
     
 </body>
 </html>

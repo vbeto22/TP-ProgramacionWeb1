@@ -7,38 +7,105 @@
 </head>
 <body>
     <header>
+        <img src="imagenes/UNLaM-Land.PNG">
         <h1>UNLaM-Land</h1>
-        <p>Carrito</p>
+        <a href=#Atracciones>Atracciones</a>
+        <a href=#Entradas>Entradas y Pases</a>
+        <details style="display: inline-block; vertical-align: middle;">
+            <summary style="list-style: none; cursor: pointer;">
+                <img src="imagenes/cart.svg" alt="Carrito de compras">
+            </summary>
+            <div>
+                <img src="imagenes/ticket1.svg" alt="Ticket Semanal">
+                <p>Cantidad: 1</p>
+                <img src="imagenes/paseRapido.svg" alt="Pase Rápido">
+                <p>Cantidad: 1</p>
+                <p>Total: $3500</p>
+                <form action="pago.html">
+                    <button type="submit">Pagar</button>
+                </form>
+            </div>
+        </details>
         <a href="usuario.html">Usuario</a>
     </header>
     <main>
         <img src="imagenes/Atracion Hero.jpg">
         <p>Bienvenidos a UNLaM-Land, el parque de diversiones de la Universidad Nacional de La Matanza.</p>
 
-        <h2>Atracciones</h2>
+        <h2 id="Atracciones">Atracciones</h2>
+        <p>Descubre las mejores atracciones de UNLaM-Land:</p>
         <img src="imagenes/Samba.jpg">
         <img src="imagenes/calesitaG.jpg">
         <img src="imagenes/montañaAcuatica.jpeg">
         <img src="imagenes/montañaRusa.jpg">
         <img src="imagenes/ruedaDeLaFortuna.jpg">
-        <h2>Entradas y Pases</h2>
-
         
+        <h2 id="Entradas">Entradas y Pases</h2>
+
+        <p>Entrada de lunes a viernes: $1000</p>
+        <img src="imagenes/ticket1.svg">
+        <form action="pago.html" method="GET">
+            <input type="hidden" name="producto" value="entrada_semana">
+            <button type="submit">Seleccionar entrada</button>
+        </form>
+        <p>Entrada de sábados, domingos y feriados: $1500</p>
+        <img src="imagenes/ticket2.svg">
+        <form action="pago.html" method="GET">
+            <input type="hidden" name="item" value="Entrada Fin de Semana">
+            <input type="hidden" name="precio" value="1500">
+            <button type="submit">Seleccionar entrada</button>
+        </form>
+        <p>Entrada para jubilados: $500</p>
+        <img src="imagenes/ticket3.svg">
+        <form action="pago.html" method="GET">
+            <input type="hidden" name="item" value="Entrada Jubilados">
+            <input type="hidden" name="precio" value="500">
+            <button type="submit">Seleccionar entrada</button>
+        </form>
+        <p>Pase rapido: $2500</p>
+        <img src="imagenes/paseRapido.svg">
+        <form action="pago.html" method="GET">
+            <input type="hidden" name="item" value="Pase Rápido">
+            <input type="hidden" name="precio" value="2500">
+            <button type="submit">Seleccionar entrada</button>
+        <p>Ticket para estacionamiento: $300</p>
+        <img src="imagenes/estacionamiento.svg">
+        <form action="pago.html" method="GET">
+            <input type="hidden" name="item" value="Estacionamiento">
+            <input type="hidden" name="precio" value="300">
+            <button type="submit">Seleccionar entrada</button>
+        </form>
+
 
         <h3>Medios de pago disponibles</h3>
 
-        <h2>Contacto</h2>
+        <p>Mercado pago</p>
+        <img src="imagenes/mercadoPago.svg">
+        <p>Tarjeta de crédito</p>
+        <img src="imagenes/americanExpressCredito.svg">
+        <img src="imagenes/visaCredito.svg">
+        <img src="imagenes/mastercardCredito.svg">
+        <p>Tarjeta de débito</p>
+        <img src="imagenes/masterCardDebito.svg">
+        <img src="imagenes/visaDebito.svg">
+        <p>Efectivo</p>
+        <img src="imagenes/pagoFacil.svg">
+        <img src="imagenes/rapipago.svg">
 
     </main>
     <footer>
+        <img src="imagenes/UNLaM-Land.PNG">
+        <h1>UNLaM-Land</h1>
         <p>VAZQUEZ ESPINDOLA MARIO ALBERTO</p>
         <p>CABRAL LUCIANO AGUSTIN</p>
-        <p>MURIEL REAL NEYER</p>
         <p>MUÑOZ CALELLO JUAN ESTEBAN</p>
         <img src="imagenes/whatsapp.svg">
         <img src="imagenes/tiktok.svg">
         <img src="imagenes/facebook.svg">
         <img src="imagenes/instagram.svg">
+
+        <a href="contacto.html">Contacto</a>
+
 
     </footer>
 </body>
