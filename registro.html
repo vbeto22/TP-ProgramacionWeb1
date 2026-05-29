@@ -10,64 +10,38 @@
 <body>
     <header>
         <section class="logo">
-            <a  href="mainLogueado.html"><img src="imagenes/UNLaM-Land.PNG"></a>
+            <a  href="mainDeslogueado.html"><img src="imagenes/UNLaM-Land.PNG"></a>
         </section>
         <section class="navegacion">
-            <details class="carritoCompra">
-                <summary class="carrito" >
-                    <img class="ImgCarrito" src="imagenes/cart.svg" alt="Carrito de compras">
-                </summary>
-                <section class="resumenCompra">
-                    <article class="tituloCompra">
-                    <h2>Resumen de compra</h2>
-                    </article>
-                    <article class="items">
-                        <img src="imagenes/ticket1.svg" alt="Ticket Semanal">
-                        <p>Cantidad: 1</p>
-                    </article>
-                    <article class="items">
-                        <img src="imagenes/paseRapido.svg" alt="Pase Rápido">
-                        <p>Cantidad: 1</p>
-                    </article>
-
-
-                    <p>Total: $3500</p>
-                    <form action="pago.html">
-                        <button class="botonPago" type="submit">Pagar</button>
-                    </form>
-                </section>
-
-            </details>
-
-            <a class="usuario" href="usuario.html">Usuario</a>     
+            <a class="login" href="index.html">Login</a>     
         </section>   
     </header>
     <main>
-        <h2>Crear cuenta en UNLaM-Land</h2>
-        <form action="index.html" method="get">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre completo">
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required placeholder="Ingrese su apellido">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required placeholder="Ingrese su correo electrónico">
-            <label for="usuario">Nombre de usuario:</label>
-            <input type="text" id="usuario" name="usuario" required placeholder="Ingrese nombre de usuario">
-            <label for="nacimiento">Fecha de nacimiento:</label>
-            <input type="date" id="nacimiento" name="nacimiento" required>
-            <label for="DNI">DNI:</label>
-            <input type="number" id="DNI" name="DNI" required placeholder="Ingrese su DNI">
-            <label for="telefono">Número de teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required placeholder="Ingrese su número de teléfono">
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" id="contraseña" name="contraseña" required placeholder="Ingrese su contraseña">
-            <button type="submit">Crear cuenta</button>
+        <h2 class="titulo">Crear cuenta en UNLaM-Land</h2>
+        <form class="formulario" action="index.html" method="get">
+            <label class="label" for="nombre">Nombre:</label>
+            <input class="input" type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre completo">
+            <label class="label" for="apellido">Apellido:</label>
+            <input class="input" type="text" id="apellido" name="apellido" required placeholder="Ingrese su apellido">
+            <label class="label" for="email">Correo electrónico:</label>
+            <input class="input" type="email" id="email" name="email" required placeholder="Ingrese su correo electrónico">
+            <label class="label" for="usuario">Nombre de usuario:</label>
+            <input class="input" type="text" id="usuario" name="usuario" required placeholder="Ingrese nombre de usuario">
+            <label class="label" for="nacimiento">Fecha de nacimiento:</label>
+            <input class="input" type="date" id="nacimiento" name="nacimiento" required>
+            <label class="label" for="DNI">DNI:</label>
+            <input class="input" type="number" id="DNI" name="DNI" required placeholder="Ingrese su DNI">
+            <label class="label" for="telefono">Número de teléfono:</label>
+            <input class="input" type="tel" id="telefono" name="telefono" required placeholder="Ingrese su número de teléfono">
+            <label class="label" for="contraseña">Contraseña:</label>
+            <input class="input" type="password" id="contraseña" name="contraseña" required placeholder="Ingrese su contraseña">
+            <button class="boton" type="submit">Crear cuenta</button>
 
         </form>
     </main>
     <footer>
         <section class="logo">
-            <a  href="mainLogueado.html"><img src="imagenes/UNLaM-Land.PNG"></a>
+            <a  href="mainDeslogueado.html"><img src="imagenes/UNLaM-Land.PNG"></a>
         </section>
         <section class="redesSociales">
             <img class="logoRRSS" src="imagenes/whatsapp.svg">

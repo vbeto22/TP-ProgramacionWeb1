@@ -1,0 +1,214 @@
+body {
+    background-color: #f7f3de;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open sans", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    width: 100%;
+}
+
+.navegacion {
+    width: 40%;
+}
+
+.contenedorImagen{
+    position: relative;
+    width: 100%;
+}
+
+.centrarImagen{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.Slogan{
+    position: absolute;
+    color: #ebd9d9;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    top: 5%;
+    text-align: center;
+    font-size: 5rem;
+    margin: 20px 0;
+}
+
+.contenedorAtracciones{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "subtitulo subtitulo subtitulo subtitulo subtitulo"
+        "atraccion1 atraccion2 atraccion3 atraccion4 atraccion5";
+    width: 100%;
+}
+
+
+.subtitulo{
+    text-align: center;
+    margin: 2rem;
+    font-size: 3rem;
+    grid-area: subtitulo;
+    color: #31c044;
+}
+
+.atraccion1{
+    grid-area: atraccion1;
+}
+
+.atraccion2{
+    grid-area: atraccion2;
+}
+
+.atraccion3{
+    grid-area: atraccion3;
+}
+
+.atraccion4{
+    grid-area: atraccion4;
+}
+
+.atraccion5{
+    grid-area: atraccion5;
+}
+
+.contenedorAtracciones img{
+    width: 100%;
+}
+
+
+.contenedorEntradas{
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+    padding: 2rem;
+    margin: 2rem;
+
+}
+
+.contenedorEntradas img{
+    width: 4%;
+    height: auto;
+}
+
+
+.descripcion{
+    font-size: 1.6rem;
+    margin-left: 10px;
+}
+
+.entrada1, .entrada2, .entrada3, .entrada4, .entrada5{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 20px;
+    border:#31c044 double 10px;
+    border-radius: 0.5em;
+}
+
+.botonSeleccionar {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #5a5760;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.contenedor-pagos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 10px;
+}
+
+.metodo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin: 0.5rem;
+}
+
+
+
+
+.metodoNombre {
+    margin: 3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+
+.logosContenedor {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    min-width: 80%;
+}
+
+.logosContenedor img {
+    height: 100%; 
+    width: auto;
+    margin-left: 10px; 
+}
+
+
+@media (max-width: 768px) {
+    .Slogan {  
+        font-size: 2.8rem;
+        top: 2%;
+}
+    .descripcion {
+        font-size: 1.1rem;
+    }
+
+    .botonSeleccionar {
+        width: 100%;
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+
+}
+
+
+@media (max-width: 425px) {
+
+    .navegacion {
+        width: 80%;
+    }
+
+    .Slogan {  
+        font-size: 1.5rem;
+        top: 2%;
+}
+    .descripcion {
+        font-size: 1.1rem;
+    }
+
+    .botonSeleccionar {
+        width: 100%;
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+    .entrada1, .entrada2, .entrada3, .entrada4, .entrada5{
+    gap: 1px;
+    border:#31c044 double 5px;
+    }
+    .metodo{
+        display: flex;
+        justify-content: center;
+        margin:0;
+    }
+}

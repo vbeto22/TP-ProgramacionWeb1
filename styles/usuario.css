@@ -109,9 +109,69 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-/* Media queries vacías limpias para uso futuro */
 @media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+
+    #formularioUsuario  {
+        grid-template-columns: 90%;
+        margin: 0 2rem;
+    }
+
+    .perfil {
+        grid-column-start: auto;
+        text-align: center;
+    }
+
+    .datosPerfil {
+        grid-column-start: auto;
+    }
+
+    .datosPerfil input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .accionesFormulario {
+        grid-column: 1 / -1;
+    }
+
 }
 
 @media (max-width: 425px) {
+
+    main {
+        width: 90%;
+    }
+
+
+    #formularioUsuario  {
+        grid-template-columns: 100%;
+    }
+
+    .perfil {
+        grid-column-start: auto;
+        text-align: center;
+    }
+
+    .datosPerfil {
+        grid-column-start: auto;
+    }
+
+    .datosPerfil input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .accionesFormulario {
+        grid-column: 1 / -1;
+    }
+
+    .boton {
+        width: 100%;
+        min-width: 20rem;
+    }
 }

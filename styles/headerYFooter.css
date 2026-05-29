@@ -3,6 +3,7 @@ header {
     align-items: center;
     justify-content:space-between;
     padding: 10px 30px;
+    border-bottom: 3px solid #ccc;
 }
 .logo {
     display: flex;
@@ -83,6 +84,7 @@ footer {
     justify-content: space-between;
     padding: 20px;
     text-align: center;
+    border-top: 3px solid #ccc;
 }
 
 
@@ -98,4 +100,25 @@ a{
     text-decoration: none;
     font-size: 1.5rem;
 
+}
+
+
+@media (max-width: 768px) {
+    .navegacion {
+        width: 35%;
+    }
+
+    .logo img {
+        height: 120px; 
+    }
+}
+
+@media (max-width: 425px) { 
+    .navegacion {
+        width: 50%;
+    }
+
+    .logo img {
+        height: 100px; 
+    }
 }

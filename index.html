@@ -10,56 +10,32 @@
 <body>
     <header>
         <section class="logo">
-            <a  href="mainLogueado.html"><img src="imagenes/UNLaM-Land.PNG"></a>
+            <a  href="mainDeslogueado.html"><img src="imagenes/UNLaM-Land.PNG"></a>
         </section>
         <section class="navegacion">
-            <details class="carritoCompra">
-                <summary class="carrito" >
-                    <img class="ImgCarrito" src="imagenes/cart.svg" alt="Carrito de compras">
-                </summary>
-                <section class="resumenCompra">
-                    <article class="tituloCompra">
-                    <h2>Resumen de compra</h2>
-                    </article>
-                    <article class="items">
-                        <img src="imagenes/ticket1.svg" alt="Ticket Semanal">
-                        <p>Cantidad: 1</p>
-                    </article>
-                    <article class="items">
-                        <img src="imagenes/paseRapido.svg" alt="Pase Rápido">
-                        <p>Cantidad: 1</p>
-                    </article>
-
-
-                    <p>Total: $3500</p>
-                    <form action="pago.html">
-                        <button class="botonPago" type="submit">Pagar</button>
-                    </form>
-                </section>
-
-            </details>
-
-            <a class="usuario" href="usuario.html">Usuario</a>     
+            <a class="login" href="index.html">Login</a>     
         </section>   
     </header>
     <main>
-        <h2>Iniciar sesion en UNLaM-Land</h2>
-        <form action="mainLogueado.html" method="get">
-            <label for="usuario">Usuario:</label>
-            <input type="text" id="usuario" name="usuario" required placeholder="Ingrese su usuario">
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" id="contraseña" name="contraseña" required placeholder="Ingrese su contraseña">
-            <button type="submit">Iniciar sesion</button>
+        <h2 class="titulo">Iniciar sesion en UNLaM-Land</h2>
+        <form class="formulario"action="mainLogueado.html" method="get">
+            <label class="label" for="usuario">Usuario:</label>
+            <input class="input" type="text" id="usuario" name="usuario" required placeholder="Ingrese su usuario">
+            <label class="label" for="contraseña">Contraseña:</label>
+            <input class="input" type="password" id="contraseña" name="contraseña" required placeholder="Ingrese su contraseña">
+            <button class="boton" type="submit">Iniciar sesion</button>
         </form>
 
-        <a href="recuperarContraseña.html">¿Olvidaste tu contraseña?</a>
+        <section class="opciones">
+        <a class="olvidasteContraseña" href="recuperarContraseña.html">¿Olvidaste tu contraseña?</a>
 
-        <a href="registro.html">Crear cuenta nueva</a>
+        <a class="registro" href="registro.html">Crear cuenta nueva</a>
+        </section>
 
     </main>   
     <footer>
         <section class="logo">
-            <a  href="mainLogueado.html"><img src="imagenes/UNLaM-Land.PNG"></a>
+            <a  href="mainDeslogueado.html"><img src="imagenes/UNLaM-Land.PNG"></a>
         </section>
         <section class="redesSociales">
             <img class="logoRRSS" src="imagenes/whatsapp.svg">
@@ -70,6 +46,6 @@
         <section class="contacto">
         <a class="contacto" href="contacto.html">Contacto</a>
         </section>
-    </footer>   
+    </footer>  
 </body>
 </html>

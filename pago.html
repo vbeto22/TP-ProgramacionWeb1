@@ -43,40 +43,73 @@
         </section>   
     </header>
     <main>
-        <h2>Mi carrito</h2>
+        <section class="productosSeleccionados">
+            <h2 class="titulo">Mi carrito</h2>
 
-        <h3>Productos</h3>
-        <img src="imagenes/ticket1.svg" alt="Ticket Semanal">
-        <p>Entrada de lunes a viernes: $1000</p>
-        <p>Cantidad: 1</p>
-        <img src="imagenes/paseRapido.svg" alt="Pase Rápido">
-        <p>Pase Rápido: $2500</p>
-        <p>Cantidad: 1</p>
+            <section class="productos">
+                <h3 class="subtitulo">Productos</h3>
+                <article class="item-lista">
+                    <img src="imagenes/ticket1.svg" alt="Ticket Semanal">
+                    <p class="valor">Entrada de lunes a viernes: $1000</p>
+                    <p class="cantidad">Cantidad: 1</p>
+                </article>
+                <article class="item-lista">
+                    <img src="imagenes/paseRapido.svg" alt="Pase Rápido">
+                    <p class="valor">Pase Rápido: $2500</p>
+                    <p class="cantidad">Cantidad: 1</p>
+                </article>
+            </section>
 
-        <h3>Total a pagar: $3500</h3>
-        <form action="index.html" method="get">
+            <section class="totalCompra">
 
-            <input type="radio" id="mercadoPago" name="metodoPago" value="mercadoPago" required>
-            <label for="mercadoPago">Mercado Pago</label><br>
-            <img src="imagenes/mercadoPago.svg">
+                <h3 class="total">Total a pagar: $3500</h3>
+            </section>
 
-            <input type="radio" id="tarjetaCredito" name="metodoPago" value="tarjetaCredito">
-            <label for="tarjetaCredito">Tarjeta de crédito</label><br>
-            <img src="imagenes/americanExpressCredito.svg">
-            <img src="imagenes/visaCredito.svg">
-            <img src="imagenes/mastercardCredito.svg">
+        </section>
+
+
+
+        <form class="metodosPago" action="index.html" method="get">
+
+            <h2 class="subtitulo">Seleccione su método de pago</h2>
+
+            <div class="opcion-pago">
+                <input type="radio" id="mercadoPago" name="metodoPago" value="mercadoPago" required>
+                <label class="labelMetodo" for="mercadoPago">Mercado Pago</label>
+                <div class="imagenes-metodo">
+                    <img src="imagenes/mercadoPago.svg" alt="Mercado Pago">
+                </div>
+            </div>
+
+            <div class="opcion-pago">
+                <input type="radio" id="tarjetaCredito" name="metodoPago" value="tarjetaCredito">
+                <label class="labelMetodo" for="tarjetaCredito">Tarjeta de crédito</label>
+                <div class="imagenes-metodo">
+                    <img src="imagenes/americanExpressCredito.svg" alt="American Express">
+                    <img src="imagenes/visaCredito.svg" alt="Visa Crédito">
+                    <img src="imagenes/mastercardCredito.svg" alt="Mastercard Crédito">
+                </div>
+            </div>
             
-            <label for="tarjetaDebito">Tarjeta de débito</label><br>
-            <input type="radio" id="tarjetaDebito" name="metodoPago" value="tarjetaDebito">
-            <img src="imagenes/masterCardDebito.svg">
-            <img src="imagenes/visaDebito.svg">
+            <div class="opcion-pago">
+                <input type="radio" id="tarjetaDebito" name="metodoPago" value="tarjetaDebito">
+                <label class="labelMetodo" for="tarjetaDebito">Tarjeta de débito</label>
+                <div class="imagenes-metodo">
+                    <img src="imagenes/masterCardDebito.svg" alt="Mastercard Débito">
+                    <img src="imagenes/visaDebito.svg" alt="Visa Débito">
+                </div>
+            </div>
 
-            <input type="radio" id="efectivo" name="metodoPago" value="efectivo">
-            <label for="efectivo">Efectivo</label><br>
-            <img src="imagenes/pagoFacil.svg">
-            <img src="imagenes/rapipago.svg"> 
+            <div class="opcion-pago">
+                <input type="radio" id="efectivo" name="metodoPago" value="efectivo">
+                <label class="labelMetodo" for="efectivo">Efectivo</label>
+                <div class="imagenes-metodo">
+                    <img src="imagenes/pagoFacil.svg" alt="Pago Fácil">
+                    <img src="imagenes/rapipago.svg" alt="Rapipago"> 
+                </div>
+            </div>
 
-            <button type="submit">Pagar</button>
+            <button class="boton" type="submit">Pagar</button>
         </form>
     </main>
     <footer>
