@@ -4,6 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "open sans", sans-serif;
+    
 }
 
 main {
@@ -11,4 +12,98 @@ main {
     flex-direction: column;
     min-height: 50vh;
     width: 100%;
+    
 }
+header{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* TITULOS */
+
+.SubTitulos{
+    color: darkgreen;
+
+    font-size: 40px;
+
+    font-style: italic;
+}
+
+
+
+/* TEXTOS */
+
+main p,
+main li{
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+/* LISTAS */
+
+main ul{
+    margin-bottom: 30px;
+}
+
+/* CAJAS */
+
+.infoBox{
+    background-color: #fffdf4;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+     border-left: 5px solid darkgreen;
+}
+
+/* MAPA */
+
+iframe{
+    border-radius: 15px;
+
+    margin-top: 20px;
+}
+
+/* USUARIO */
+
+.usuario{
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 20px;
+}
+
+.usuario:hover{
+    color: darkgreen;
+}
+
+/* CARRITO */
+
+.ImgCarrito{
+    width: 30px;
+}
+
+/* REDES */
+
+.logoRRSS{
+    width: 35px;
+
+    transition: 0.2s;
+}
+
+.logoRRSS:hover{
+    transform: scale(1.1);
+}
+
