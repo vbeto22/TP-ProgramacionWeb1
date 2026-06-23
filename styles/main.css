@@ -102,7 +102,7 @@ main {
     margin-left: 10px;
 }
 
-.entrada1, .entrada2, .entrada3, .entrada4, .entrada5{
+.entrada{
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -202,7 +202,7 @@ main {
         padding: 8px 16px;
         font-size: 1rem;
     }
-    .entrada1, .entrada2, .entrada3, .entrada4, .entrada5{
+    .entrada{
     gap: 1px;
     border:#31c044 double 5px;
     }
