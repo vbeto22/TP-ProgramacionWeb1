@@ -85,10 +85,9 @@ main {
     display:flex;
     flex-direction: column;
     align-items: left;
-    gap: 20px;
+    gap: 25px;
     padding: 2rem;
-    margin: 2rem;
-
+    margin: 2rem auto;
 }
 
 .contenedorEntradas img{
@@ -109,6 +108,7 @@ main {
     gap: 20px;
     border:#31c044 double 10px;
     border-radius: 0.5em;
+    padding: 15px 20px;
 }
 
 .botonSeleccionar {

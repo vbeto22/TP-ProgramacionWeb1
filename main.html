@@ -11,8 +11,10 @@
     <header>
         <section class="logo">
             <a  href="main.html"><img src="imagenes/UNLaM-Land.PNG"></a>
+            <input type="text" id="buscador" placeholder="Buscar entrada...">
         </section>
         <section class="navegacion">
+            
             <details class="carritoCompra">
                 <summary class="carrito" >
                     <img class="ImgCarrito" src="imagenes/cart.svg" alt="Carrito de compras">
@@ -59,52 +61,8 @@
 
         
         <h2 class="subtitulo">Entradas y Pases</h2>
-        <section class="contenedorEntradas">
-            <div class="entrada">
-                <img src="imagenes/ticket1.svg">
-                <p class="descripcion">Entrada de lunes a viernes: $1000</p>
-                <form action="pago.html" method="GET">
-                    <input type="hidden" name="producto" value="entrada_semana">
-                    <button class="botonSeleccionar" type="submit">Seleccionar entrada</button>
-                </form>
-            </div>
-
-
-            <div class="entrada">
-                <img src="imagenes/ticket2.svg">
-                <p class="descripcion">Entrada de sábados, domingos y feriados: $1500</p>
-                <form action="pago.html" method="GET">
-                    <input type="hidden" name="item" value="Entrada Fin de Semana">
-                    <button class="botonSeleccionar" type="submit">Seleccionar entrada</button>
-            </form>
-            </div>
+        <section class="contenedorEntradas" id="contenedorEntradas">
             
-            <div class="entrada">
-                <img src="imagenes/ticket3.svg">
-                <p class="descripcion">Entrada para jubilados: $500</p>
-                <form action="pago.html" method="GET">
-                    <input type="hidden" name="item" value="Entrada Jubilados">
-                    <button class="botonSeleccionar" type="submit">Seleccionar entrada</button>
-                </form>
-            </div>
-
-            <div class="entrada">
-                <img src="imagenes/paseRapido.svg">
-                <p class="descripcion">Pase rapido: $2500</p>
-                <form action="pago.html" method="GET">
-                    <input type="hidden" name="item" value="Pase Rápido">
-                    <button class="botonSeleccionar" type="submit">Seleccionar entrada</button>
-                </form>
-            </div>
-            
-            <div class="entrada">
-                <img src="imagenes/estacionamiento.svg">
-                <p class="descripcion">Ticket para estacionamiento: $300</p>
-                <form action="pago.html" method="GET">
-                    <input type="hidden" name="item" value="Estacionamiento">
-                    <button class="botonSeleccionar" type="submit">Seleccionar entrada</button>
-                </form>
-            </div>
         </section>
 
         <h2 class="subtitulo">Medios de pago disponibles</h2>
@@ -158,5 +116,6 @@
         <a class="contacto" href="contacto.html">Contacto</a>
         </section>
     </footer>  
+    <script src="scripts/main.js"></script>
 </body>
 </html>
