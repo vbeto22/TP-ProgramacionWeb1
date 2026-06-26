@@ -4,38 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pago</title>
-    <link rel="stylesheet" href="styles/headerYFooter.css">
+    <link rel="stylesheet" href="styles/headerFooterFormulario.css">
     <link rel="stylesheet" href="styles/pago.css">
 </head>
 <body>
     <header>
         <section class="logo">
-            <a  href="main.html"><img src="imagenes/UNLaM-Land.PNG"></a>
+            <a href="main.html"><img src="imagenes/UNLaM-Land.PNG"></a>
         </section>
         <section class="navegacion">
             <details class="carritoCompra">
-                <summary class="carrito" >
+                <summary class="carrito">
                     <img class="ImgCarrito" src="imagenes/cart.svg" alt="Carrito de compras">
                 </summary>
-                <section class="resumenCompra">
+                
+                <section class="resumenCompra" id="miniCarritoHeader">
                     <article class="tituloCompra">
-                    <h2>Resumen de compra</h2>
+                        <h2>Resumen de compra</h2>
                     </article>
-                    <article class="items">
-                        <img src="imagenes/ticket1.svg" alt="Ticket Semanal">
-                        <p>Cantidad: 1</p>
-                    </article>
-                    <article class="items">
-                        <img src="imagenes/paseRapido.svg" alt="Pase Rápido">
-                        <p>Cantidad: 1</p>
-                    </article>
-
-
-                    <p>Total: $3500</p>
-                    <form action="pago.html">
-                        <button class="botonPago" type="submit">Pagar</button>
-                    </form>
-                </section>
+                    </section>
 
             </details>
 
@@ -46,30 +33,17 @@
         <section class="productosSeleccionados">
             <h2 class="titulo">Mi carrito</h2>
 
-            <section class="productos">
+            <section class="productos" id="productosCheckout">
                 <h3 class="subtitulo">Productos</h3>
-                <article class="item-lista">
-                    <img src="imagenes/ticket1.svg" alt="Ticket Semanal">
-                    <p class="valor">Entrada de lunes a viernes: $1000</p>
-                    <p class="cantidad">Cantidad: 1</p>
-                </article>
-                <article class="item-lista">
-                    <img src="imagenes/paseRapido.svg" alt="Pase Rápido">
-                    <p class="valor">Pase Rápido: $2500</p>
-                    <p class="cantidad">Cantidad: 1</p>
-                </article>
-            </section>
+                </section>
 
             <section class="totalCompra">
-
-                <h3 class="total">Total a pagar: $3500</h3>
+                <h3 class="total" id="totalPago">Total a pagar: $0</h3>
             </section>
 
         </section>
 
-
-
-        <form class="metodosPago" action="index.html" method="get">
+        <form class="metodosPago" action="main.html" method="get">
 
             <h2 class="subtitulo">Seleccione su método de pago</h2>
 
@@ -114,18 +88,19 @@
     </main>
     <footer>
         <section class="logo">
-            <a  href="main.html"><img src="imagenes/UNLaM-Land.PNG"></a>
+            <a href="main.html"><img src="imagenes/UNLaM-Land.PNG"></a>
         </section>
         <section class="redesSociales">
             <img class="logoRRSS" src="imagenes/whatsapp.svg">
             <img class="logoRRSS" src="imagenes/tiktok.svg">
             <img class="logoRRSS" src="imagenes/facebook.svg">
-            <img class="logoRRSS"src="imagenes/instagram.svg">
+            <img class="logoRRSS" src="imagenes/instagram.svg">
         </section>
         <section class="contacto">
-        <a class="contacto" href="contacto.html">Contacto</a>
+            <a class="contacto" href="contacto.html">Contacto</a>
         </section>
     </footer>       
-
+    
+    <script src="scripts/pago.js"></script>
 </body>
 </html>

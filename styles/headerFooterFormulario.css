@@ -102,6 +102,22 @@ a{
 
 }
 
+.input-error {
+    border: 2px solid #ff4d4d !important;
+    background-color: #fff2f2;
+}
+
+.mensaje-error {
+    color: #ff4d4d;
+    font-size: 0.8rem;
+    font-weight: bold;
+    grid-column: 1 / -1;
+    justify-self: center;
+    place-items: center;
+    width: 100%;
+    max-width: 25rem;
+}
+
 
 @media (max-width: 768px) {
     .navegacion {
